@@ -1,7 +1,7 @@
 from ThermalPrinter import ThermalPrinter
 import struct
 
-rawData = open("Combat.A26", "rb").read()
+rawData = open("ThermalPrinter.py", "rb").read()
 unpacked = struct.unpack('B' * len(rawData), rawData)
 printer = ThermalPrinter("COM5", baud=115200)
 
