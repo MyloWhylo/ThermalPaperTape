@@ -3,7 +3,7 @@ import struct
 
 rawData = open("ThermalPrinter.py", "rb").read()        # Read the file as a binary
 unpacked = struct.unpack('B' * len(rawData), rawData)   # Unpack it to a tuple of bytes
-printer = ThermalPrinter("COM5", baud=115200)           # Declarethe printer
+printer = ThermalPrinter("COM5", baud=115200)           # Declare the printer
 
 
 def main():
